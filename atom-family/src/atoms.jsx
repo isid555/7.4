@@ -1,9 +1,9 @@
 import { atomFamily } from "recoil";
-import { TODOS } from "./todos";
+import { Todos } from "./todos.js";
 
 export const todosAtomFamily = atomFamily({
   key: 'todosAtomFamily',
   default: id => {
-    return TODOS.find(x => x.id === id)
+    return Todos.find(x => x.id === id)
   },
 });
